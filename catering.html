@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39541c44d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <title>Catering</title>
+    <style>
+        @font-face {
+            font-family: 'dyna';
+            src: url(DynaPuff/DynaPuff-Regular.ttf);
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 13vh;
+            color: white;
+            background-color: rgb(183, 108, 76);
+            text-align: center;
+            padding: 15px 15px;
+            font-size: 55px;
+            font-family: 'dyna';
+            letter-spacing: 1px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        header>a{
+            text-decoration: none;
+            font-size: 18px;
+            margin-left: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header>a:hover{
+            text-shadow: 0 0 4px darkgray;
+        }
+        div.image{
+            margin: 35px;
+            display: flex;
+            justify-content: center;
+        }
+        div.text{
+            margin: 0 19vw;
+            padding: 25px;
+            box-sizing: border-box;
+            width: 60%;
+            color: rgb(183, 108, 76);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-indent: 55px;
+            font-size: 25px;
+            text-align: justify;
+        }
+        div.text> span{
+            vertical-align: bottom;
+            margin-right: 8px;
+            font-size: 35px;
+            line-height: 46px;
+        }
+        div.text>a:link{
+            color: rgb(183, 108, 76);
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 46px;
+        }
+        @media (max-width:576px) {
+            header{
+                width: 100%;
+                font-size: 24px;
+            }
+            header>a{
+                display: block;
+                font-size: 15px;
+                position: absolute;
+                top: 10%;
+                right: 0;
+            }
+            div.image{
+                display: none;
+            }
+            div.text{
+                width: 90%;
+                padding: 0;
+                margin: 4vh 4vw;
+                text-align: justify;
+                font-size: 18px;
+            }
+            div.text> span{
+                vertical-align: middle;
+                margin-right: 8px;
+                margin-left: 0;
+                padding-left: 0;
+                font-size: 25px;
+                line-height: 26px;
+                text-indent: 0;
+            }
+            div.text>a:link{
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+            }
+            div.text>a:link>p{
+                text-align: end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Catering Yemek <a href="index.html">>> Anasayfaya Dön</a></header>
+    <div class="image">
+        <img src="https://www.demo12.bulutwebsite.net/Uploads/Global/bulutwebsite-yemek-resmi.jpg">
+    </div>
+    <div class="text">
+        Catering hizmetlerimiz siz değerli müşterilerimiz için, davetlerinizde etkinliklerinizde size destek olmak için vardır. Sıcak ve soğuk ikramlarımız, kanepelerimiz, sandiviç ve taze tatlılarımız ile isteğinize göre hazırlıyoruz. En kaliteli malzemeleri hijyenik bir ortam da özenle hazırlıyoruz.<br>
+        Davetlerden önce bizimle iletişime geçmelisiniz. İletişim numaralarımız ise şöyle: <br><br>
+        <span class="material-symbols-outlined">
+            call
+            </span><a href="tel:+90506 149 7470"><b>Telefon: </b>0506 149 7470</a><br>
+            <span class="material-symbols-outlined">
+                mail
+               </span><a href="mailto:ozgurhanates89@gmail.com"><b>E-posta: </b>ozgurhanates89@gmail.com</a>
+    </div>
+    
+</body>
+</html>

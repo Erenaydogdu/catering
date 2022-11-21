@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öneri</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(108, 70, 70);
+        }
+        .form{
+            background-color: rgb(160, 123, 49);
+            border: 1px solid black;
+            width: 70%;
+            height: 50vh;
+            padding: 5px;
+            border-radius: 2px;
+            text-transform: capitalize;
+            position: relative;
+            margin: 10vh auto;
+        }
+        label{
+            color: white;
+            /* display: block; */
+            padding: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        textarea{
+            width: 100%;
+            border-radius: 2px;
+            color: #555;
+            box-sizing: border-box;
+            padding: 10px 5px;
+            height: 25vh;
+            resize: none;
+            font-size: 16px;
+        }
+        button{
+            display: block; 
+            width: 98%;
+            background-color: #222;
+            color: white;
+            padding: 5px 5px;
+            margin: 5px 5px;
+            font-size: 16px;
+            border-radius: 2px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;   /* buttonda el işareti gösterir */
+        }
+        button:hover{
+            background-color: #333;
+        }
+        p{
+            color: white;
+            display: block;
+            padding: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;   
+        }
+        p>span{
+            color: rgb(184, 184, 184);
+        }
+        label> a {
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            
+            float: right;
+        }
+        label> a:hover{
+            text-shadow: 0 0 4px darkgray;
+        }
+        @media (max-width:576px) {
+            
+            div.form{
+                width: 93%;
+                height: auto;
+            }
+            textarea{
+                width: 100%;
+            }
+            label{
+                display: block;
+            }
+            button{
+                width: 95%;
+                position: relative;
+            }
+            input{
+                width: 97%;
+            }
+            
+        }
+    </style>
+</head>
+<body>   
+        <div class="form" >
+            <form action="#" method="post" >
+                <label for="comment">Dilek ve Önerileriniz<a href="index.html">>>  Anasayfaya Dön</a></label> 
+                <textarea id="comment" placeholder="Yorum Girin..." autofocus></textarea>
+                <p>Size ulaşabilmemiz için lütfen iletişim bilgilerinizi girin.<span>(İsteğe bağlı*)</span></p>
+                <label for="mail">E-posta Adresiniz:</label>
+                <input type="email" id="mail" name="mail">
+                <label for="tel">Telefon Numaranız:</label>
+                <input type="tel" id="tel" name="tel">
+                <button type="button" id="save">Gönder</button><br>
+                
+
+            </form>
+        </div>
+        
+    
+</body>
+</html>
